@@ -10,11 +10,7 @@ public class StudentGradeValidationSvc {
         DataSet dataSet = new DataSet();
         StudentGradeValidationSvc studentSvc = new StudentGradeValidationSvc();
 
-        long startTime = System.nanoTime();
         System.out.println(studentSvc.checkStudentGradeStatus(dataSet.getStudentList()));
-        long endTime = System.nanoTime();
-        long timeElapsed = endTime - startTime;
-        System.out.println("Execution time in milliseconds : " + timeElapsed / 1000000);
 
     }
 
